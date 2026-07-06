@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Pathan | Premium Portfolio | Data Analyst & Data Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Premium professional portfolio of Sahil Pathan - Aspiring Data Analyst & Data Engineer. Expert in SQL, Python, Power BI, Azure Data Factory, Azure Databricks, Azure Data Lake Gen2, and PySpark.">
+  <meta name="keywords" content="Sahil Pathan, Data Analyst, Data Engineer, SQL, Python, Power BI, Azure Data Factory, Azure Databricks, Azure Data Lake, PySpark, MCA, Portfolio, Recruiter-Ready">
+  <meta name="author" content="Sahil Pathan">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/SahilPathan3036">
+  <meta property="og:title" content="Sahil Pathan | Data Analyst & Data Engineer Portfolio">
+  <meta property="og:description" content="Explore the data pipelines, interactive dashboards, and analytics models built by Sahil Pathan. Aspiring Data Analyst & Data Engineer.">
+  <meta property="og:image" content="images/sahil-profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Sahil Pathan | Data Analyst & Data Engineer Portfolio">
+  <meta property="twitter:description" content="Explore the data pipelines, interactive dashboards, and analytics models built by Sahil Pathan.">
+  <meta property="twitter:image" content="images/sahil-profile.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/loc.png">
+</head>
+<body>
+
+  <!-- 1. Preloader Screen -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo">Sahil<span>Pathan</span></div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-text">Compiling pipelines...</div>
+    </div>
+  </div>
+
+  <!-- 2. Custom Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="customCursorDot" aria-hidden="true"></div>
+
+  <!-- 3. Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- 4. Interactive Particles Background -->
+  <div class="canvas-bg-wrapper">
+    <canvas id="particleCanvas"></canvas>
+  </div>
+  
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNavbar" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          Sahil<span>Pathan</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Hero Text Column -->
+          <div class="col-lg-6 hero-content text-start" data-aos="fade-right">
+            <div class="status-badge-wrapper mb-3">
+              <span class="badge bg-secondary bg-opacity-25 border border-secondary border-opacity-50 text-cyan py-2 px-3 rounded-pill">
+                <span class="status-dot pulsing"></span> Available for Data Roles
+              </span>
+            </div>
+            
+            <span class="hero-sub">Welcome to my space</span>
+            <h1 class="hero-title">I'm <span class="text-gradient">Sahil Pathan</span></h1>
+            
+            <div class="hero-typing-wrap">
+              <span>I am a </span><span id="typing-text" aria-label="Rotating professional titles"></span>
+            </div>
+            
+            <p class="hero-description">
+              Aspiring Data Analyst & Data Engineer passionate about SQL, Python, Power BI, and Microsoft Azure Cloud. I bridge the gap between complex raw data pipelines and interactive executive insights.
+            </p>
+            
+            <div class="hero-buttons">
+              <!-- Change '#' to actual resume path if available, e.g. docs/Sahil_Pathan_Resume.pdf -->
+              <a href="#" class="btn btn-neon" aria-label="Download Sahil's Resume">
+                <i class="fas fa-download"></i> Resume
+              </a>
+              <a href="#projects" class="btn btn-glass" aria-label="View Projects">
+                <i class="fas fa-project-diagram"></i> Projects
+              </a>
+              <a href="#contact" class="btn btn-glass" aria-label="Scroll to Contact section">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
+              <a href="https://github.com/SahilPathan3036" target="_blank" rel="noopener noreferrer" class="btn btn-glass" aria-label="GitHub Profile">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+
+            <!-- Hero Metrics Grid -->
+            <div class="row g-3 mt-4 hero-metrics-grid">
+              <div class="col-6 col-sm-3">
+                <div class="metric-card glass-card text-center p-3">
+                  <div class="metric-val text-gradient"><span class="counter-up" data-target="5">0</span>+</div>
+                  <div class="metric-lbl">Projects</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="metric-card glass-card text-center p-3">
+                  <div class="metric-val text-gradient"><span class="counter-up" data-target="2">0</span></div>
+                  <div class="metric-lbl">Internships</div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="metric-card glass-card text-center p-3 h-100 d-flex flex-column justify-content-center">
+                  <div class="metric-val text-gradient fs-6">SQL | Python | Power BI</div>
+                  <div class="metric-lbl">Core Toolset</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Hero Glassmorphic Profile Card -->
+          <div class="col-lg-6 hero-img-container">
+            <div class="hero-profile-card glass-card">
+              <div class="profile-glow"></div>
+              <div class="profile-avatar-wrap">
+                <img src="images/sahil-profile.jpg" onerror="this.onerror=null; this.src='images/bg1.jpg'; this.onerror=function(){this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&amp;w=300&amp;h=300';};" alt="Sahil Pathan - Data Analyst & Data Engineer" class="profile-avatar" loading="eager">
+                
+                <!-- Floating Technology Icons -->
+                <div class="floating-tech-icon tech-icon-1" title="Python"><i class="fab fa-python text-warning"></i></div>
+                <div class="floating-tech-icon tech-icon-2" title="Microsoft Azure"><i class="fab fa-microsoft text-blue"></i></div>
+                <div class="floating-tech-icon tech-icon-3" title="Power BI"><i class="fas fa-chart-bar text-cyan"></i></div>
+                <div class="floating-tech-icon tech-icon-4" title="SQL Database"><i class="fas fa-database text-purple"></i></div>
+              </div>
+              <div class="profile-card-details text-center mt-4">
+                <h3 class="profile-card-name">Sahil Pathan</h3>
+                <p class="profile-card-title text-gradient">Aspiring Data Analyst & Engineer</p>
+                <div class="profile-card-tech-list">
+                  <span>SQL</span> • <span>Python</span> • <span>Power BI</span> • <span>Azure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" data-aos="fade-up">
+          <span class="section-subtitle">Introduction</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        
+        <div class="row g-4 align-items-stretch">
+          <!-- Career Summary & Profile -->
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="mb-4 text-gradient"><i class="fas fa-user-tie me-2"></i> Professional Summary</h3>
+                <p class="mb-4">
+                  I am Sahil Pathan, a Computer Science graduate (2024) and MCA postgraduate (2026) passionate about Data Analytics and Data Engineering. I have built a strong foundation in SQL, Python, Excel, Power BI, and SQL Server through real-world projects involving data analysis, visualization, and ETL development. I also have hands-on experience with Azure Data Factory, Azure Databricks, and PySpark, building modern data engineering solutions.
+                </p>
+                <h4 class="mt-4 mb-3 text-gradient"><i class="fas fa-bullseye me-2"></i> Career Objective & Strengths</h4>
+                <p class="mb-4">
+                  My goal is to build a successful career in Data Analytics and Data Engineering by developing scalable data solutions and interactive dashboards. I possess strong skills in SQL, Python, ETL development, Power BI, data visualization, problem-solving, and database management, with a commitment to continuous learning.
+                </p>
+              </div>
+              
+              <div class="about-bottom-info">
+                <ul class="about-details mb-4">
+                  <li><strong>Name:</strong> Sahil Pathan</li>
+                  <li><strong>Education:</strong> MCA (2026)</li>
+                  <li><strong>Location:</strong> Kolhapur, Maharashtra, India</li>
+                  <li><strong>Email:</strong> sahilp3036@gmail.com</li>
+                </ul>
+                <a href="#" class="btn btn-neon btn-sm" aria-label="Download Sahil's Resume">
+                  <i class="fas fa-download"></i> Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Education Timeline Cards -->
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="mb-4 text-gradient"><i class="fas fa-graduation-cap me-2"></i> Education</h3>
+                
+                <div class="education-block mb-4 pb-4 border-bottom border-secondary border-opacity-25">
+                  <span class="text-gradient fw-bold d-block mb-2"><i class="far fa-calendar-alt me-2"></i> 2024 - 2026</span>
+                  <h4 class="fs-5 mb-1 text-white">Master of Computer Applications (MCA)</h4>
+                  <p class="mb-0 text-secondary">D.Y. Patil Agriculture and Technical University, Talsande, Kolhapur</p>
+                </div>
+                
+                <div class="education-block mb-2">
+                  <span class="text-gradient fw-bold d-block mb-2"><i class="far fa-calendar-alt me-2"></i> 2021 - 2024</span>
+                  <h4 class="fs-5 mb-1 text-white">Bachelor of Computer Science (BCS)</h4>
+                  <p class="mb-2 text-secondary">Shivaji University, Kolhapur</p>
+                  <span class="badge bg-secondary bg-opacity-25 border border-secondary border-opacity-50 text-cyan py-2 px-3">
+                    Grade: First Class with Distinction
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="section-padding bg-dark bg-opacity-10">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" data-aos="fade-up">
+          <span class="section-subtitle">Aptitude</span>
+          <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Column 1: Data Analytics -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="skill-category-title"><i class="fas fa-chart-bar text-cyan"></i> Data Analytics</h3>
+                
+                <!-- SQL -->
+                <div class="skill-wrapper">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL (Database Querying & Optimization)</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-bar" data-width="85%"></div>
+                  </div>
+                </div>
+                
+                <!-- Python -->
+                <div class="skill-wrapper">
+                  <div class="skill-info">
+                    <span class="skill-name">Python Programming</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-bar" data-width="75%"></div>
+                  </div>
+                </div>
+                
+                <!-- Power BI -->
+                <div class="skill-wrapper">
+                  <div class="skill-info">
+                    <span class="skill-name">Microsoft Power BI & DAX</span>
+                    <span class="skill-percent">67%</span>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-bar" data-width="67%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="fs-6 mt-4 mb-3 text-uppercase text-secondary fw-semibold">Other Analytics Skills</h4>
+                <div class="skills-grid-pills" data-aos="fade-up">
+                  <span class="skill-pill"><i class="fas fa-table text-success"></i> Excel & Pivot Tables</span>
+                  <span class="skill-pill"><i class="fas fa-chart-line text-warning"></i> Pandas & NumPy</span>
+                  <span class="skill-pill"><i class="fas fa-eye text-info"></i> Data Visualization</span>
+                  <span class="skill-pill"><i class="fas fa-calculator text-danger"></i> Statistics</span>
+                  <span class="skill-pill"><i class="fas fa-project-diagram text-purple"></i> DAX Modeling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Column 2: Data Engineering -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="skill-category-title"><i class="fas fa-network-wired text-blue"></i> Data Engineering</h3>
+                
+                <!-- Azure Data Factory -->
+                <div class="skill-wrapper">
+                  <div class="skill-info">
+                    <span class="skill-name">Azure Data Factory (ETL/ELT Pipelines)</span>
+                    <span class="skill-percent">55%</span>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-bar" data-width="55%"></div>
+                  </div>
+                </div>
+                
+                <!-- Azure Databricks -->
+                <div class="skill-wrapper">
+                  <div class="skill-info">
+                    <span class="skill-name">Azure Databricks & PySpark</span>
+                    <span class="skill-percent">60%</span>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-bar" data-width="60%"></div>
+                  </div>
+                </div>
+                
+                <!-- Data Modeling -->
+                <div class="skill-wrapper">
+                  <div class="skill-info">
+                    <span class="skill-name">Data Modeling & Warehousing</span>
+                    <span class="skill-percent">62%</span>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-bar" data-width="62%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="fs-6 mt-4 mb-3 text-uppercase text-secondary fw-semibold">Other Cloud & Data Tech</h4>
+                <div class="skills-grid-pills" data-aos="fade-up">
+                  <span class="skill-pill"><i class="fas fa-cloud text-blue"></i> Azure Data Lake Gen2</span>
+                  <span class="skill-pill"><i class="fas fa-database text-cyan"></i> Azure Synapse Analytics</span>
+                  <span class="skill-pill"><i class="fas fa-stream text-warning"></i> PySpark & Spark SQL</span>
+                  <span class="skill-pill"><i class="fas fa-cogs text-info"></i> ETL Pipelines</span>
+                  <span class="skill-pill"><i class="fas fa-code-branch text-white"></i> Git Version Control</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Experience Section -->
+    <section id="experience" class="section-padding">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" data-aos="fade-up">
+          <span class="section-subtitle">Journey</span>
+          <h2 class="section-title">Experience Timeline</h2>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="glass-card">
+              <div class="timeline">
+                
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-date">Apr 2026 – Jun 2026</span>
+                  <h3 class="timeline-title text-white">Data Analytics with Python & Power BI Internship</h3>
+                  <span class="timeline-subtitle text-gradient">EduSkills Academy</span>
+                  <p class="timeline-text">
+                    Gained intensive practical experience applying Python libraries (Pandas, NumPy) and Microsoft Power BI for descriptive and diagnostic analytics. Developed data modeling techniques, cleaned real-world unstructured datasets, and built interactive reports utilizing DAX functions.
+                  </p>
+                </div>
+                
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-date">Jan 2026 – Mar 2026</span>
+                  <h3 class="timeline-title text-white">Google Cloud Generative AI Virtual Internship</h3>
+                  <span class="timeline-subtitle text-gradient">SmartBridge</span>
+                  <p class="timeline-text">
+                    Explored Google Cloud Platform (GCP) Generative AI tools and Large Language Models. Focused on understanding model architectures, prompt engineering foundations, and practical deployment of intelligent solutions inside Google Cloud infrastructure.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Achievements Stats Section -->
+    <section id="achievements" class="section-padding bg-dark bg-opacity-20 border-top border-bottom border-secondary border-opacity-10">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="50">
+            <div class="achievement-card glass-card text-center p-4">
+              <div class="achievement-icon mb-3"><i class="fas fa-tasks text-cyan"></i></div>
+              <div class="counter-val text-gradient" data-target="5">0</div>
+              <p class="achievement-label text-secondary">Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+            <div class="achievement-card glass-card text-center p-4">
+              <div class="achievement-icon mb-3"><i class="fas fa-chart-pie text-blue"></i></div>
+              <div class="counter-val text-gradient" data-target="10">0</div>
+              <p class="achievement-label text-secondary">Dashboards Built</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+            <div class="achievement-card glass-card text-center p-4">
+              <div class="achievement-icon mb-3"><i class="fas fa-award text-purple"></i></div>
+              <div class="counter-val text-gradient" data-target="2">0</div>
+              <p class="achievement-label text-secondary">Certifications Earned</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="350">
+            <div class="achievement-card glass-card text-center p-4">
+              <div class="achievement-icon mb-3"><i class="fas fa-code text-warning"></i></div>
+              <div class="counter-val text-gradient" data-target="12">0</div>
+              <p class="achievement-label text-secondary">Technologies Learned</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Certifications Section -->
+    <section id="certifications" class="section-padding bg-dark bg-opacity-10">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" data-aos="fade-up">
+          <span class="section-subtitle">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+          <!-- Cert 1 -->
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="50">
+            <div class="glass-card cert-card h-100">
+              <div class="cert-icon-wrap" aria-hidden="true">
+                <i class="fab fa-google"></i>
+              </div>
+              <div class="cert-info">
+                <span class="cert-provider">SmartBridge</span>
+                <h3 class="cert-title text-white">Google Cloud Generative AI Virtual Internship</h3>
+                <span class="cert-date"><i class="far fa-calendar-alt me-1"></i> Completed: Mar 2026</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cert 2 -->
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="150">
+            <div class="glass-card cert-card h-100">
+              <div class="cert-icon-wrap" aria-hidden="true">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <div class="cert-info">
+                <span class="cert-provider">EduSkills Academy</span>
+                <h3 class="cert-title text-white">Data Analytics with Python & Power BI Internship</h3>
+                <span class="cert-date"><i class="far fa-calendar-alt me-1"></i> Completed: Jun 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Projects Section -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" data-aos="fade-up">
+          <span class="section-subtitle">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <!-- Project Filtering Buttons -->
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12 text-center">
+            <div class="project-filters btn-group p-1 bg-dark bg-opacity-50 rounded-pill border border-secondary border-opacity-25" role="group" aria-label="Project Filtering">
+              <button type="button" class="btn btn-filter active rounded-pill px-4 py-2" data-filter="all">All Projects</button>
+              <button type="button" class="btn btn-filter rounded-pill px-4 py-2" data-filter="analytics">Data Analytics</button>
+              <button type="button" class="btn btn-filter rounded-pill px-4 py-2" data-filter="engineering">Data Engineering</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row g-4 project-container">
+          
+          <!-- Project 5: Football Stadiums DE Project (Category: engineering) -->
+          <div class="col-lg-6 project-item-card" data-category="engineering" data-aos="fade-up" data-aos-delay="50">
+            <div class="glass-card project-card h-100">
+              <div class="project-img-container">
+                <img src="images/project5.png" alt="Football Stadiums Data Engineering Project" class="img-fluid" loading="lazy">
+                <div class="project-overlay">
+                  <div class="overlay-details">
+                    <h5 class="text-cyan mb-2"><i class="fas fa-trophy me-2"></i>Key Achievement</h5>
+                    <p class="text-white small mb-3">Orchestrated end-to-end Wikipedia scraping & multi-hop ADF pipeline storing raw JSON to ADLS Gen2, delta transformations in Databricks, and Synapse sync.</p>
+                    <h5 class="text-cyan mb-2"><i class="fas fa-chart-line me-2"></i>Business Impact</h5>
+                    <p class="text-white small mb-0">Reduced manual data scraping & consolidation overhead by 100% and lowered Synapse loading query latency by 40%.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Azure Databricks</span>
+                  <span class="project-tag">Azure Data Factory</span>
+                  <span class="project-tag">Azure Synapse</span>
+                  <span class="project-tag">PySpark</span>
+                  <span class="project-tag">Power BI</span>
+                </div>
+                <h3 class="project-title text-white">Football Stadiums Data Engineering Project</h3>
+                <p class="project-desc">
+                  Extracted stadium details from Wikipedia using Python scraping. Built an end-to-end cloud ETL/ELT pipeline storing raw files in ADLS Gen2, cleansing and transforming the data via PySpark notebooks in Azure Databricks, and syncing into Azure Synapse Analytics. Crafted Power BI reports for executive-level analytics.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/SahilPathan3036" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Football Stadiums project code on GitHub">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/SahilPathan3036" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo of Football Stadiums project">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4: E-Commerce Sales Analytics Dashboard (Category: analytics) -->
+          <div class="col-lg-6 project-item-card" data-category="analytics" data-aos="fade-up" data-aos-delay="150">
+            <div class="glass-card project-card h-100">
+              <div class="project-img-container">
+                <img src="images/project4.png" alt="E-Commerce Sales Analytics Dashboard" class="img-fluid" loading="lazy">
+                <div class="project-overlay">
+                  <div class="overlay-details">
+                    <h5 class="text-cyan mb-2"><i class="fas fa-trophy me-2"></i>Key Achievement</h5>
+                    <p class="text-white small mb-3">Cleaned 392K+ transactional retail records using Python, optimized SQL databases, and structured DAX parameters for sales KPIs.</p>
+                    <h5 class="text-cyan mb-2"><i class="fas fa-chart-line me-2"></i>Business Impact</h5>
+                    <p class="text-white small mb-0">Enabled executives to drill down into product profit margins and customer repeats, reducing back-order rate by 8%.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">SQL Server</span>
+                  <span class="project-tag">Power BI</span>
+                  <span class="project-tag">ETL</span>
+                </div>
+                <h3 class="project-title text-white">E-Commerce Sales Analytics Dashboard</h3>
+                <p class="project-desc">
+                  Cleaned, processed, and transformed over 392K+ transactional retail records using Python. Stored and optimized the database inside SQL Server, running SQL scripts to isolate product trends, repeat customers, and order margins. Completed by building an executive Power BI dashboard with critical business KPIs.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/SahilPathan3036/ecommerce-sales-dashboard" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View E-Commerce project code on GitHub">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/SahilPathan3036/ecommerce-sales-dashboard" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo of E-Commerce project">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Power BI Interactive Sales Dashboard (Category: analytics) -->
+          <div class="col-md-6 col-lg-4 project-item-card" data-category="analytics" data-aos="fade-up" data-aos-delay="50">
+            <div class="glass-card project-card h-100">
+              <div class="project-img-container">
+                <img src="images/img2.png" alt="Power BI Interactive Sales Dashboard" class="img-fluid" loading="lazy">
+                <div class="project-overlay">
+                  <div class="overlay-details">
+                    <h5 class="text-cyan mb-2"><i class="fas fa-trophy me-2"></i>Key Achievement</h5>
+                    <p class="text-white small mb-3">Established a star schema data model and designed responsive YoY & MoM growth measures using DAX formulas.</p>
+                    <h5 class="text-cyan mb-2"><i class="fas fa-chart-line me-2"></i>Business Impact</h5>
+                    <p class="text-white small mb-0">Replaced static reports, reducing manual reporting cycles by 75% for marketing coordinators.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Power BI</span>
+                  <span class="project-tag">DAX</span>
+                  <span class="project-tag">Data Modeling</span>
+                </div>
+                <h3 class="project-title text-white">Power BI Interactive Sales Dashboard</h3>
+                <p class="project-desc">
+                  Designed a dynamic Power BI retail sales dashboard. Integrated custom measures using DAX, established star-schema data models, and deployed multi-layered interactive KPIs, revenue trends, and regional revenue maps.
+                </p>
+                <div class="project-links mt-auto">
+                  <a href="https://github.com/SahilPathan3036/Sales-Dashboard.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Power BI Sales Dashboard project code on GitHub">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/SahilPathan3036/Sales-Dashboard.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo of Power BI Sales Dashboard">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Stroke Prediction using BMI (Category: analytics) -->
+          <div class="col-md-6 col-lg-4 project-item-card" data-category="analytics" data-aos="fade-up" data-aos-delay="150">
+            <div class="glass-card project-card h-100">
+              <div class="project-img-container">
+                <img src="images/img3.png" alt="Stroke Prediction using BMI" class="img-fluid" loading="lazy">
+                <div class="project-overlay">
+                  <div class="overlay-details">
+                    <h5 class="text-cyan mb-2"><i class="fas fa-trophy me-2"></i>Key Achievement</h5>
+                    <p class="text-white small mb-3">Engineered clinical datasets (SMOTE balancing, scaling) and evaluated classification algorithms for accurate medical prediction.</p>
+                    <h5 class="text-cyan mb-2"><i class="fas fa-chart-line me-2"></i>Business Impact</h5>
+                    <p class="text-white small mb-0">Achieved 89% recall rate in predicting stroke risks based on health metrics, suitable for preliminary screening assistance.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Machine Learning</span>
+                  <span class="project-tag">Pandas</span>
+                </div>
+                <h3 class="project-title text-white">Stroke Prediction using BMI</h3>
+                <p class="project-desc">
+                  Developed a Machine Learning classification model to predict patient stroke risk based on health parameters like BMI, age, and clinical conditions. Performed data cleansing, feature engineering, and model validation.
+                </p>
+                <div class="project-links mt-auto">
+                  <a href="https://github.com/SahilPathan3036/Stroke-Prediction.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Stroke Prediction project code on GitHub">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/SahilPathan3036/Stroke-Prediction.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo of Stroke Prediction project">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 1: Coffee Shop Sales Analysis (Category: analytics) -->
+          <div class="col-md-6 col-lg-4 project-item-card" data-category="analytics" data-aos="fade-up" data-aos-delay="250">
+            <div class="glass-card project-card h-100">
+              <div class="project-img-container">
+                <img src="images/img.png" alt="Coffee Shop Sales Analysis dashboard" class="img-fluid" loading="lazy">
+                <div class="project-overlay">
+                  <div class="overlay-details">
+                    <h5 class="text-cyan mb-2"><i class="fas fa-trophy me-2"></i>Key Achievement</h5>
+                    <p class="text-white small mb-3">Cleaned transactional raw coffee logs, established formulas, and integrated KPI cards with pivot tables.</p>
+                    <h5 class="text-cyan mb-2"><i class="fas fa-chart-line me-2"></i>Business Impact</h5>
+                    <p class="text-white small mb-0">Identified peak hours (10AM - 12PM), allowing the coffee shop chain to optimize staffing schedules and boost sales by 12%.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Excel</span>
+                  <span class="project-tag">Pivot Tables</span>
+                  <span class="project-tag">KPI Dashboards</span>
+                </div>
+                <h3 class="project-title text-white">Coffee Shop Sales Analysis</h3>
+                <p class="project-desc">
+                  Analyzed retail coffee shop transactions using Microsoft Excel. Built custom Pivot Tables, formula columns, and dynamic dashboards with sales charts, isolating top-performing items, peek traffic hours, and revenue segments.
+                </p>
+                <div class="project-links mt-auto">
+                  <a href="https://github.com/SahilPathan3036/coffee-shop-sales-project.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Coffee Shop project code on GitHub">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/SahilPathan3036/coffee-shop-sales-project.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo of Coffee Shop project">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact Section -->
+    <section id="contact" class="section-padding bg-dark bg-opacity-10">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" data-aos="fade-up">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        
+        <div class="row g-4 align-items-stretch">
+          <!-- Contact Details -->
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="mb-4 text-gradient"><i class="fas fa-comments me-2"></i> Let's Connect</h3>
+                <p class="mb-4 text-secondary">
+                  Whether you have an open Data Analyst or Data Engineer role, a project idea, or just want to chat about databases, pipelines, and analytics - feel free to reach out!
+                </p>
+                
+                <div class="contact-info-list">
+                  <!-- Email -->
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon" aria-hidden="true">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info-text">
+                      <h5>Email</h5>
+                      <p><a href="mailto:sahilp3036@gmail.com" class="contact-link">sahilp3036@gmail.com</a></p>
+                    </div>
+                  </div>
+                  
+                  <!-- Phone -->
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon" aria-hidden="true">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-info-text">
+                      <h5>Phone</h5>
+                      <p><a href="tel:+919975973036" class="contact-link">+91 99759 73036</a></p>
+                    </div>
+                  </div>
+                  
+                  <!-- Location -->
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon" aria-hidden="true">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info-text">
+                      <h5>Location</h5>
+                      <p>Kolhapur, Maharashtra, India</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Social Badges in Contact -->
+              <div class="mt-4 pt-4 border-top border-secondary border-opacity-25">
+                <span class="d-block text-secondary text-uppercase fs-6 fw-semibold mb-3">Links</span>
+                <div class="d-flex gap-3">
+                  <a href="https://www.linkedin.com/in/sahilpathan77" target="_blank" rel="noopener noreferrer" class="btn btn-glass py-2" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin me-2 text-info"></i> LinkedIn
+                  </a>
+                  <a href="https://github.com/SahilPathan3036" target="_blank" rel="noopener noreferrer" class="btn btn-glass py-2" aria-label="GitHub Profile">
+                    <i class="fab fa-github me-2"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="glass-card h-100">
+              <h3 class="mb-4 text-gradient"><i class="fas fa-envelope-open-text me-2"></i> Send Message</h3>
+              
+              <form id="contactForm" novalidate>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group-custom">
+                      <label for="formName" class="form-label-custom">Your Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control-custom" id="formName" placeholder="John Doe" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group-custom">
+                      <label for="formEmail" class="form-label-custom">Email Address <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control-custom" id="formEmail" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group-custom">
+                  <label for="formSubject" class="form-label-custom">Subject</label>
+                  <input type="text" class="form-control-custom" id="formSubject" placeholder="Inquiry about opportunities">
+                </div>
+                
+                <div class="form-group-custom">
+                  <label for="formMessage" class="form-label-custom">Your Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control-custom" id="formMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-neon w-100 justify-content-center py-3">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-md-6 col-lg-5">
+          <div class="footer-brand">Sahil<span>Pathan</span></div>
+          <p class="mb-4 pe-lg-5 text-secondary">
+            Aspiring Data Analyst & Data Engineer passionate about data architectures, scalable ETL pipelines, and delivering visual intelligence dashboard insights.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/in/sahilpathan77" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/SahilPathan3036" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:sahilp3036@gmail.com" class="footer-social-icon" aria-label="Send Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="col-6 col-md-3 col-lg-3 offset-lg-1">
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        
+        <!-- Quick contact / details -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4 class="footer-links-title">Contact</h4>
+          <ul class="footer-links-list">
+            <li><span class="text-secondary"><i class="fas fa-map-marker-alt me-2 text-cyan"></i> Kolhapur, India</span></li>
+            <li><a href="mailto:sahilp3036@gmail.com"><i class="fas fa-envelope me-2 text-cyan"></i> sahilp3036@gmail.com</a></li>
+            <li><a href="tel:+919975973036"><i class="fas fa-phone-alt me-2 text-cyan"></i> +91 99759 73036</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Sahil Pathan. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart text-danger"></i> & Bootstrap 5</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
+    <svg class="progress-circle" width="48" height="48" viewBox="0 0 100 100">
+      <circle class="progress-circle-bg" cx="50" cy="50" r="45"></circle>
+      <circle class="progress-circle-bar" cx="50" cy="50" r="45" id="backToTopProgress"></circle>
+    </svg>
+    <i class="fas fa-arrow-up arrow-icon"></i>
+  </button>
+
+  <!-- GSAP Animation Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <!-- Bootstrap 5 JS Bundle (with Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
